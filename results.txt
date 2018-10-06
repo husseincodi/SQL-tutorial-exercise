@@ -1,0 +1,31 @@
+Basic Queries:
+Basic Query:
+1) select name from students =>
+"Alex"
+"Basma"
+"Hasan"
+"Hussein"
+"Jana"
+"Layal"
+"Robert"
+
+2)select * from students where Age>30 =>
+"5"	"Robert""34"	"M"	"500"
+"6"	"Jana"	"33"	"F"	"500"
+
+3)select * from students where Age=30 and gender="F" =>
+no rows returned
+
+4)select points from students where name="Alex" =>
+ 200 
+
+5)insert into students(ID,name,age,gender,points)values(7,"Hussein",21,"M",1102) =>
+new row added to the table 
+
+6)UPDATE students SET Points = Points +50 WHERE name="Basma" =>
+Basma points increased by 50
+
+7) UPDATE students SET Points = Points -50 WHERE name="Alex" =>
+ Alex points decreased by 50
+
+
