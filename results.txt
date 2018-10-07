@@ -28,52 +28,5 @@ Basma points increased by 50
 7) UPDATE students SET Points = Points -50 WHERE name="Alex" =>
  Alex points decreased by 50
 
-Creating table:
-1) insert into graduates(Id,name,age,gender,points) select * from students where name="Layal" =>
-Layal info copied from students to graduates
-
-2)update graduates set graduation=8/9/2018 where name="Layal" =>
-"4" "Layal" "18" "F" "350" "08/09/2018"
-
-3)Delete from students where name="Layal" =>
- Layal's record deleted from students
-"1"	"Alex"	"21"	"M"	"200"
-"2"	"Basma"	"25"	"F"	"300"
-"3"	"Hasan"	"30"	"M"	"150"
-"5"	"Robert" "34"	"M"	"500"
-"6"	"Jana"	"33"	"F"	"500"
-"7"	"Hussein" "21"	"M"	"1102"
-
-Joins:
-
-1)select employees.Name 
-FROM employees 
-INNER JOIN companies
- on companies.ID=employees.ID
- WHERE companies.Date <2000
- =>
- Marc
-2)select companies.Name from companies inner join employees on companies.ID=employees.ID where employees.Role="Graphic Designer" =>
-Snapchat
-
-Count and Filter :
-
-1)select name from students where points=(select max(points) from students) =>
-"Robert"
-"Jana"
-
-2)select avg(points) from students =>
-333.333333333333
-
-3)select count(*) from students where points=500 =>
-2
-
-4)select * from students order by points desc =>
-"5"	"Robert""34"	"M"	"500"
-"6"	"Jana"	"33"	"F"	"500"
-"4"	"Layal"	"18"	"F"	"350"
-"2"	"Basma"	"25"	"F"	"300"
-"1"	"Alex"	"21"	"M"	"200"
-"3"	"Hasan"	"30"	"M"	"150"
 
 
