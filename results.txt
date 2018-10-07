@@ -19,7 +19,7 @@ no rows returned
 4)select points from students where name="Alex" =>
  200 
 
-5)insert into students(ID,name,age,gender,points)values(7,"Hussein",21,"M",1102) =>
+5)insert into students(ID,name,age,gender,points)values(7,"Hussein",21,"M",110) =>
 new row added to the table 
 
 6)UPDATE students SET Points = Points +50 WHERE name="Basma" =>
