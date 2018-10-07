@@ -56,5 +56,24 @@ INNER JOIN companies
 2)select companies.Name from companies inner join employees on companies.ID=employees.ID where employees.Role="Graphic Designer" =>
 Snapchat
 
+Count and Filter :
+
+1)select name from students where points=(select max(points) from students) =>
+"Robert"
+"Jana"
+
+2)select avg(points) from students =>
+333.333333333333
+
+3)select count(*) from students where points=500 =>
+2
+
+4)select * from students order by points desc =>
+"5"	"Robert""34"	"M"	"500"
+"6"	"Jana"	"33"	"F"	"500"
+"4"	"Layal"	"18"	"F"	"350"
+"2"	"Basma"	"25"	"F"	"300"
+"1"	"Alex"	"21"	"M"	"200"
+"3"	"Hasan"	"30"	"M"	"150"
 
 
